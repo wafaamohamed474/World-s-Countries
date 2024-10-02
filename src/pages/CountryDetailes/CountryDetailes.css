@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+:root {
+  --bk: white;
+  --main-color: black;
+  --secondry-color: #6f6f6f;
+  --body-bk: #eeeeee94;
+}
+[data-theme="dark"] {
+  --bk: rgb(44, 61, 75);
+  --main-color: white;
+  --secondry-color: #eee;
+  --body-bk: rgba(4, 23, 36, 0.886);
+}
+body {
+  background-color: var(--body-bk);
+}
+.backBtn {
+  box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.132);
+  width: fit-content;
+  padding: 5px 30px;
+  border-radius: 5px;
+  margin: 50px 0 50px 12px;
+  cursor: pointer;
+  background-color: var(--bk);
+}
+.backBtn a {
+  text-decoration: none !important;
+  color: var(--main-color);
+  font-size: 12px;
+  width: 100%;
+}
+.backBtn span {
+  margin-left: 10px !important;
+}
+.row1 {
+  justify-content: space-between;
+  align-items: center;
+}
+.countryDetailes h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.countryDetailes span {
+  font-size: 13px;
+  color: var(--secondry-color);
+}
+.countryDetailes .BorderCountries {
+  margin-top: 20px;
+}
+.row h5 {
+  font-size: 16px;
+  color: var(--main-color);
+}
+@media (max-width: 991px) {
+  .container {
+    width: 85%;
+  }
+  .countryDetailes {
+    margin-top: 50px;
+  }
+  .countryDetailes .right,
+  .left {
+    margin: 20px 0;
+  }
+}

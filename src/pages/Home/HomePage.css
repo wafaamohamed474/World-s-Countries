@@ -1,0 +1,135 @@
+img {
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bk: white;
+  --main-color: black;
+  --secondry-color: #6f6f6f;
+  --body-bk: #eeeeee94;
+  --main-shadow: 0 5px 8px #bdbcbc2f;
+}
+[data-theme="dark"] {
+  --bk: rgb(44, 61, 75);
+  --main-color: white;
+  --secondry-color: #eee;
+  --body-bk: rgba(4, 23, 36, 0.886);
+  --main-shadow: none;
+}
+.body {
+  background-color: var(--body-bk) !important;
+}
+.products {
+  padding: 30px 0;
+}
+.products .row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+.search {
+  width: 40%;
+  padding: 10px 20px;
+  background-color: var(--bk);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--main-shadow);
+  margin-bottom: 20px;
+}
+ 
+.search input {
+  width: 90%;
+  height: 100%;
+  border: none;
+  font-size: 12px;
+  background-color: var(--bk);
+  color: var(--secondry-color) !important;
+}
+.search input:focus {
+  outline: none;
+}
+.search .searchIcon {
+  font-size: 14px;
+  color: var(--secondry-color);
+}
+select {
+  background-color: var(--bk);
+  border: none;
+  box-shadow: var(--main-shadow);
+  color: var(--secondry-color);
+  font-size: 14px !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 400;
+  border: none !important;
+  margin-bottom: 20px !important;
+}
+select::after{
+  display: none;
+}
+select:focus{
+  outline: none;
+}
+option {
+  color: var(--secondry-color) !important;
+  margin: 5px 0 !important;
+  font-size: 14px !important;
+}
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px !important;
+}
+.col-lg-3 {
+  height: 320px;
+}
+.row2 .card {
+  border: none;
+  border-radius: 5px;
+  box-shadow: var(--main-shadow);
+  overflow: hidden;
+  background-color: var(--bk);
+}
+.row2 h6 {
+  color: var(--main-color);
+}
+.row2 p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--secondry-color);
+}
+.row2 span {
+  font-weight: 600;
+  color: var(--main-color);
+}
+.row2  a{
+  text-decoration: none;
+  color: var(--secondry-color);
+  text-align: right;
+  font-size: 14px;
+  padding-top: 20px !important;
+}
+.card{
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .search {
+    width: 100%;
+  }
+  .row2 {
+    justify-content: center;
+  }
+}
+ 
+ 
